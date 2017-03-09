@@ -47,12 +47,7 @@ public class MainModel implements IModel {
 	public String calculate(String input, int indexFactorA, int indexFactorB) {
 		double inputValue = Double.parseDouble(input);
 		double result=0.0;
-		
-		if(indexFactorA <= indexFactorB)
-			result = (inputValue * conversionFactors[indexFactorA]) / conversionFactors[indexFactorB];
-		else
-			result = (inputValue * conversionFactors[indexFactorB]) / conversionFactors[indexFactorA];
-			
+		result = inputValue * (conversionFactors[indexFactorA] / conversionFactors[indexFactorB]);
 		return String.valueOf(result);
 	}
 }
