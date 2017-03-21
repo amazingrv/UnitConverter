@@ -10,6 +10,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
 import java.awt.Font;
 import java.awt.event.ContainerEvent;
 import java.awt.event.ContainerListener;
@@ -34,13 +35,13 @@ public class MainView extends JFrame implements IView, ContainerListener, ItemLi
 
 	public MainView() {
 		// createGUI();
-		// activate the above line only for UI testing purpose
+		// activate the above line only for UI modification
 	}
 
 	@Override
 	public void setPresenter(IPresenter p) {
 		presenter = p;
-		createGUI();
+		createGUI(); // disable this line when modifying ui
 	}
 
 	private void createGUI() {
