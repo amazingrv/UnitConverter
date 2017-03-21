@@ -46,6 +46,7 @@ public class MainView extends JFrame implements IView, ContainerListener, ItemLi
 
 	private void createGUI() {
 		setResizable(false);
+		setTitle("Amazing Unit Converter");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 387, 268);
 		contentPane = new JPanel();
