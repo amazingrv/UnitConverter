@@ -21,6 +21,7 @@ import javax.swing.ComboBoxModel;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
+@SuppressWarnings("serial")
 public class MainView extends JFrame implements IView, ContainerListener, ItemListener, FocusListener {
 	private JPanel contentPane;
 	private JComboBox<String> comboBoxMainType;
