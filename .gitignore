@@ -28,6 +28,8 @@ build/
 .settings
 .metadata
 bin/
+.idea/
+.iml
 
 # NetBeans specific files/directories
 .nbattrs
